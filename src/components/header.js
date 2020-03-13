@@ -15,7 +15,6 @@ const Header = () => {
         css={css`
           max-width: 1200px;
           margin: 0 auto;
-
           @media (min-width: 768px) {
             display: flex;
             align-items: center;
