@@ -18,7 +18,13 @@ const useHabitaciones = () => {
       }
     }
   `)
-  console.log(data)
+  return data.allDatoCmsHabitacione.nodes.map(habitacion => ({
+    titulo: habitacion.titulo,
+    id: habitacion.id,
+    contenido: habitacion.contenido,
+    imagen: habitacion.imagen,
+    slug: habitacion.slug,
+  }))
 }
 
 export default useHabitaciones
